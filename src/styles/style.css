@@ -1,0 +1,82 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    background:#f2f2f2;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0px;
+    padding:20px;
+}
+.CreateButton{
+    background: purple;
+    color:white;
+    position: relative;
+    margin:10px auto;
+    display:block;
+    padding:5px;
+    border:none;
+    border-radius:10px;
+    width:150px;
+    cursor:pointer;
+}
+.icon-face{
+    width:20px;
+    height:20px;
+    background:black;
+    border-radius:50%;
+
+    text-align: center;
+    color: white;
+    cursor:pointer;;
+    position: relative;
+}
+
+.icon-check{
+    background:green !important;
+    rotate: 90deg;
+}
+.icon-check:after{
+    content:":)";
+}
+.list-check{
+    background:aquamarine !important;
+}
+.TodoCounter{
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding:10px;
+    font-size:18px;
+    text-align: center;
+}
+.TodoList ul{
+    list-style: none;
+    padding:0px;
+}
+.TodoList li{
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    border:1px solid orange;
+    margin:15px 0;
+    padding:2%;
+    border-radius:10px;
+    background-color:#c4c4c4;
+}
+.TodoList .TodoItemClose{
+    padding:10px;
+    border-radius:50%;
+    background-color:burlywood;
+    color:white;
+    width:30px;
+    height:30px;
+    font-size:10px;
+    text-align: center;
+    font-weight: bold;
+    border:1px dotted white;
+}
+.TodoSearch input{
+    border:none;
+    border-radius:10px;
+    padding:10px;
+    width:100%;
+}
