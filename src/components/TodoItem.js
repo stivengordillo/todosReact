@@ -1,7 +1,6 @@
 import React from "react";
 
 function TodoItem(props){
-
     return(
        <li className={`${props.completed && 'list-check'}`}>
         <span 
