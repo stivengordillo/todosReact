@@ -1,13 +1,13 @@
 import React from "react";
 
-function CreateButton(){
-    const onClickButton = (msg) => {
-        alert(msg)
+function CreateButton(props){
+    const onClickButton = () => {
+        props.setOpenModal(prevState => !prevState);
     }
     return(
         <button 
             className="CreateButton"
-            onClick={ () =>onClickButton('Este es el mensaje')}
+            onClick={onClickButton}
         >
             Agregar Otra tarea
         </button>

@@ -10,7 +10,7 @@ body{
 .CreateButton{
     background: purple;
     color:white;
-    position: relative;
+    position: fixed;
     margin:10px auto;
     display:block;
     padding:5px;
@@ -18,6 +18,8 @@ body{
     border-radius:10px;
     width:150px;
     cursor:pointer;
+    z-index: 99999999999;
+    bottom: 5px;
 }
 .icon-face{
     width:20px;
@@ -40,6 +42,19 @@ body{
 }
 .list-check{
     background:aquamarine !important;
+}
+.modal{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.7);
+    top:0;
+    left:0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
 }
 .TodoCounter{
     border:1px solid #ccc;
